@@ -18,6 +18,9 @@ h1 {
     padding-top: 2vh;
     padding-bottom: 2vh;
     opacity: 0.6;
+    font-size: 30px;
+    text-align: center;
+    display: inline;
 }
 
 .carousel-container {
@@ -33,12 +36,13 @@ h1 {
     opacity: 0.2;
 }
 
-img {
-    border-radius: 10px;
+
+#imgOne {
+    width: 60vw;
 }
 
 .thumbnail-container {
-    width: 60vw;
+    width: 80vw;
     padding-top: 3vh;
     margin: auto;
     display: flex;
