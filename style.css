@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    #imgOne {
+        width: 90vw;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 20px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        opacity: 0.6;
+        text-align: center;
+        display: inline;
+    }
+}
+
+/* desktop */
 * {
     margin: 0;
     padding: 0;
@@ -24,12 +43,25 @@ h1 {
 }
 
 .carousel-container {
-    margin: auto;
-    width: 60vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
 }
 
-.fa-solid {
+.arrow-container {
+    display: flex;
+    justify-content: center;
     padding-top: 2vh;
+}
+
+.fa-arrow-left {
+    padding-top: 2vh;
+    padding-right: 2vw;
+}
+
+.fa-arrow-right {
+    padding-top: 2vh;
+    padding-left: 2vw;
 }
 
 .fa-solid:hover {
@@ -38,10 +70,12 @@ h1 {
 
 #imgOne {
     width: 60vw;
+    border-radius: 12px;
+    margin: auto;
 }
 
 .thumbnail-container {
-    width: 80vw;
+    width: 60vw;
     padding-top: 3vh;
     margin: auto;
     display: flex;
@@ -51,6 +85,7 @@ h1 {
 .thumbnail-img {
     width: 8vw;
     opacity: 0.4;
+    border-radius: 12px;
 }
 
 .thumbnail-img:hover {
